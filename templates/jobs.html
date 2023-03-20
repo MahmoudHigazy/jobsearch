@@ -1,0 +1,6 @@
+{% for job in jobs['values'] %}
+    <h3>{{ job['position']['title'] }}</h3>
+    <p>{{ job['company']['name'] }}</p>
+    <p>{{ job['locationDescription'] }}</p>
+    <p>{{ job['descriptionSnippet'] }}</p>
+{% endfor %}
